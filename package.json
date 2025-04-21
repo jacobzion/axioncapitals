@@ -1,5 +1,5 @@
 {
-  "name": "axioncapitals-netlify",
+  "name": "axioncapitals-branded-site",
   "version": "1.0.0",
   "scripts": {
     "dev": "next dev",
