@@ -1,5 +1,10 @@
 
+import Layout from '../components/Layout'
 import AdminPanel from '../components/AdminPanel'
 export default function Admin() {
-  return <AdminPanel />
+  return (
+    <Layout>
+      <AdminPanel />
+    </Layout>
+  )
 }
