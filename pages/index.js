@@ -10,7 +10,7 @@ export default function Home() {
       </p>
       <div className="flex flex-col sm:flex-row gap-4">
         <button className="bg-black text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition">
-          View Investment Listings
+          View Investment Listings test test
         </button>
         <button className="border border-black text-black px-6 py-3 rounded-lg hover:bg-black hover:text-white transition">
           Join Our Investor Network
