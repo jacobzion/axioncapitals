@@ -1,5 +1,6 @@
-export default function handler(req, res) {
-  const allProperties = [
+export default async function handler(req, res) {
+  // Simulate external API fetch (replace this with real API like ATTOM or RentCast)
+  const simulatedApiResponse = [
     { id: 1, name: "Modern Family Home", location: "Austin, TX", price: 550000, image: "https://unsplash.it/400/250?image=1067" },
     { id: 2, name: "Luxury Beach Villa", location: "Miami, FL", price: 1250000, image: "https://unsplash.it/400/250?image=1050" },
     { id: 3, name: "Downtown Condo", location: "New York, NY", price: 875000, image: "https://unsplash.it/400/250?image=1033" },
@@ -10,7 +11,7 @@ export default function handler(req, res) {
 
   const { page = 1, location = "", minPrice = 0, maxPrice = 9999999 } = req.query;
   const pageSize = 3;
-  const filtered = allProperties.filter(p =>
+  const filtered = simulatedApiResponse.filter(p =>
     (!location || p.location.toLowerCase().includes(location.toLowerCase())) &&
     p.price >= parseInt(minPrice) &&
     p.price <= parseInt(maxPrice)
