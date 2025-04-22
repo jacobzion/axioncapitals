@@ -7,10 +7,10 @@ export default function Home() {
       <header className="bg-gradient-to-r from-blue-900 to-indigo-700 text-white px-4 py-4 shadow-md">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between space-y-2 md:space-y-0">
           <div className="flex items-center space-x-4">
-            <img src="/logo.png" alt="Axion Capitals Logo" className="h-10 w-auto" />
+            <img src="/axion-logo.png" alt="Axion Capitals Logo" className="h-16 w-auto" />
             <div>
               <h1 className="text-xl font-bold md:text-2xl">Axion Capitals</h1>
-              <p className="text-xs">Your Gateway to Premium Real Estate Investment</p>
+              <p className="text-xs">Real Estate · AI Investment · Smart Contracts</p>
             </div>
           </div>
           <nav className="flex flex-wrap justify-center md:justify-end gap-4 text-sm font-medium">
