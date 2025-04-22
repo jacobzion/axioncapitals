@@ -20,7 +20,7 @@ export default function Page() {
   <a href="/find-home-ko" className="hover:underline">주택 찾기</a>
   <a href="/buy-biz-ko" className="hover:underline">사업체 인수</a>
   <a href="/contact" className="hover:underline">Contact</a>
-</nav><div className="mt-2 md:mt-0"><a href="/" className="bg-white text-blue-900 px-3 py-1 rounded text-sm hover:bg-blue-100 transition">English</a></div>
+</nav><div className="mt-2 md:mt-0"><a href="/" className="text-sm text-white underline hover:text-blue-300">English</a></div>
         </div>
       </header>
 

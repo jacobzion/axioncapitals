@@ -19,7 +19,7 @@ export default function Home() {
           <Link href="/find-home">Find Home</Link>
           <Link href="/buy-biz">Buy Biz</Link>
           <Link href="/contact">Contact</Link>
-        </nav><div className="mt-2 md:mt-0"><a href="/index-ko" className="bg-white text-blue-900 px-3 py-1 rounded text-sm hover:bg-blue-100 transition">한국어</a></div>
+        </nav><div className="mt-2 md:mt-0"><a href="/index-ko" className="text-sm text-white underline hover:text-blue-300">한국어</a></div>
       </header>
 
       <main className="px-4 md:px-12 py-10 space-y-16">
