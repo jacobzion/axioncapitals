@@ -2,7 +2,7 @@
 import { useState } from 'react';
 
 export default function Admin() {
-  const [form, setForm] = useState({ title: '', price: '', description: '', image: '' });
+  const [form, setForm] = useState({ type: 'Property', title: '', price: '', description: '', image: '' });
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -27,6 +27,13 @@ export default function Admin() {
 
       <main className="max-w-xl mx-auto space-y-6">
         <form onSubmit={handleSubmit} className="space-y-4">
+          <div>
+            <label className="block text-sm font-medium text-gray-700">Listing Type</label>
+            <select name="type" onChange={handleChange} value={form.type} className="w-full border border-gray-300 p-2 rounded">
+              <option value="Property">Property</option>
+              <option value="Business">Business</option>
+            </select>
+          </div>
           <div>
             <label className="block text-sm font-medium text-gray-700">Title</label>
             <input name="title" onChange={handleChange} value={form.title} className="w-full border border-gray-300 p-2 rounded" required />
