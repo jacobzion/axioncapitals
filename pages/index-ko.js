@@ -11,14 +11,14 @@ export default function KoreanHome() {
             <p className="text-sm text-gray-400">AI 기반 부동산 및 스마트 투자 솔루션</p>
           </div>
         </div>
-        <nav className="flex flex-wrap justify-center md:justify-end gap-4 text-sm font-medium text-blue-300 mt-4 md:mt-0">
-          <Link href="/index-ko">홈</Link>
-          <Link href="/invest-ko">부동산 투자</Link>
-          <Link href="/management-ko">부동산 관리</Link>
-          <Link href="/find-home-ko">주택 찾기</Link>
-          <Link href="/buy-biz-ko">사업체 인수</Link>
-          <Link href="/contact">Contact</Link>
-        </nav>
+        <nav className="flex flex-wrap justify-center md:justify-end gap-4 text-sm font-medium">
+  <a href="/index-ko" className="hover:underline">홈</a>
+  <a href="/invest-ko" className="hover:underline">부동산 투자</a>
+  <a href="/management-ko" className="hover:underline">부동산 관리</a>
+  <a href="/find-home-ko" className="hover:underline">주택 찾기</a>
+  <a href="/buy-biz-ko" className="hover:underline">사업체 인수</a>
+  <a href="/contact" className="hover:underline">Contact</a>
+</nav>
       </header>
 
       <main className="px-4 md:px-12 py-10 space-y-16">

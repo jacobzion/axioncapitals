@@ -14,7 +14,7 @@ export default function Page() {
             </div>
           </div>
           <nav className="flex flex-wrap justify-center md:justify-end gap-4 text-sm font-medium">
-  <a href="/" className="hover:underline">Home</a>
+  <a href="/index-ko" className="hover:underline">홈</a>
   <a href="/invest-ko" className="hover:underline">부동산 투자</a>
   <a href="/management-ko" className="hover:underline">부동산 관리</a>
   <a href="/find-home-ko" className="hover:underline">주택 찾기</a>
