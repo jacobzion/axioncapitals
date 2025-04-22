@@ -1,6 +1,5 @@
 
 import Link from 'next/link'
-import LanguageToggle from '../components/LanguageToggle'
 
 export default function Home() {
   return (
@@ -20,7 +19,6 @@ export default function Home() {
           <Link href="/find-home">Find Home</Link>
           <Link href="/buy-biz">Buy Biz</Link>
           <Link href="/contact">Contact</Link>
-          <LanguageToggle />
         </nav>
       </header>
 
@@ -30,19 +28,22 @@ export default function Home() {
         </section>
 
         <section>
-          <h2 className="text-2xl md:text-3xl font-semibold text-blue-400 mb-4">Explore Investment Domains</h2>
-          <div className="grid md:grid-cols-3 gap-6 text-gray-200">
-            <div className="bg-gray-800 p-6 rounded-xl shadow hover:shadow-2xl transition transform hover:-translate-y-1">
-              <h3 className="text-xl font-bold mb-2">Smart Real Estate</h3>
-              <p>AI-curated listings and predictive analytics for optimal property decisions across residential and commercial markets.</p>
+          <h2 className="text-2xl md:text-3xl font-semibold text-blue-400 mb-6">Featured Properties</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-gray-800 rounded-xl p-4 shadow hover:shadow-xl transition transform hover:-translate-y-1">
+              <img src="/property1.jpg" alt="Property 1" className="rounded-md mb-4 w-full"/>
+              <h3 className="text-xl font-bold">Beverly Hills Villa</h3>
+              <p>$4.2M · 5 Beds · 6 Baths</p>
             </div>
-            <div className="bg-gray-800 p-6 rounded-xl shadow hover:shadow-2xl transition transform hover:-translate-y-1">
-              <h3 className="text-xl font-bold mb-2">AI Investment & Automation</h3>
-              <p>Machine learning models for ROI prediction, portfolio balancing, and automated growth strategies.</p>
+            <div className="bg-gray-800 rounded-xl p-4 shadow hover:shadow-xl transition transform hover:-translate-y-1">
+              <img src="/property2.jpg" alt="Property 2" className="rounded-md mb-4 w-full"/>
+              <h3 className="text-xl font-bold">Downtown NYC Penthouse</h3>
+              <p>$7.5M · 4 Beds · 4.5 Baths</p>
             </div>
-            <div className="bg-gray-800 p-6 rounded-xl shadow hover:shadow-2xl transition transform hover:-translate-y-1">
-              <h3 className="text-xl font-bold mb-2">Smart Contract Platforms</h3>
-              <p>Blockchain-backed legal automation for global property transactions and secure digital investment deals.</p>
+            <div className="bg-gray-800 rounded-xl p-4 shadow hover:shadow-xl transition transform hover:-translate-y-1">
+              <img src="/property3.jpg" alt="Property 3" className="rounded-md mb-4 w-full"/>
+              <h3 className="text-xl font-bold">Waterfront Miami Estate</h3>
+              <p>$6.9M · 6 Beds · 7 Baths</p>
             </div>
           </div>
         </section>
