@@ -1,6 +1,5 @@
 
 
-import LanguageToggle from '../components/LanguageToggle';
 
 export default function Page() {
   return (
@@ -21,7 +20,7 @@ export default function Page() {
             <a href="/find-home-ko" className="hover:underline">주택 찾기</a>
             <a href="/buy-biz-ko" className="hover:underline">사업체 인수</a>
             <a href="/contact" className="hover:underline">Contact</a>
-          </nav><div className="mt-2 md:mt-0"><LanguageToggle /></div>
+          </nav>
         </div>
       </header>
 
