@@ -1,11 +1,30 @@
 
 export default function Page() {
   return (
-    <div className="min-h-screen bg-white text-gray-900 p-6">
-      <header className="bg-gradient-to-r from-blue-900 to-indigo-700 text-white p-4 mb-6 rounded">
-        <h1 className="text-2xl font-bold">Find a Home</h1>
-      </header>
+    <div className="min-h-screen bg-white text-gray-900 p-4 md:p-6">
+      
+<header className="bg-gradient-to-r from-blue-900 to-indigo-700 text-white px-4 py-4 shadow-md mb-6">
+  <div className="flex flex-col md:flex-row md:items-center md:justify-between space-y-2 md:space-y-0">
+    <div className="flex items-center space-x-4">
+      <img src="/axion-logo.png" alt="Axion Capitals Logo" className="h-16 w-auto" />
+      <div>
+        <h1 className="text-xl font-bold md:text-2xl">Axion Capitals</h1>
+        <p className="text-xs">Real Estate · AI Investment · Smart Contracts</p>
+      </div>
+    </div>
+    <nav className="flex flex-wrap justify-center md:justify-end gap-4 text-sm font-medium">
+      <a href="/" className="hover:underline">Home</a>
+      <a href="/invest" className="hover:underline">Invest</a>
+      <a href="/management" className="hover:underline">Management</a>
+      <a href="/find-home" className="hover:underline">Find Home</a>
+      <a href="/buy-biz" className="hover:underline">Buy Biz</a>
+      <a href="/contact" className="hover:underline">Contact</a>
+    </nav>
+  </div>
+</header>
+
       <main className="max-w-3xl mx-auto space-y-4 text-base leading-relaxed">
+        <h2 className="text-2xl font-bold mb-2">Find a Home</h2>
         
 <p>Searching for your dream home? Whether you're moving across town or across the globe, we help you discover and secure the perfect property:</p>
 <ul className="list-disc list-inside my-4 space-y-1">
