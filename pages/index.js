@@ -24,11 +24,11 @@ export default function Home() {
 
       <main className="p-8 space-y-12">
         <div className="w-full flex justify-center">
-          <img src="/hero-banner.png" alt="Hero Banner" className="rounded-xl w-full max-w-5xl shadow-lg" />
+          <img src="/hero-banner.png" alt="Hero Banner" className="rounded-xl w-full max-w-4xl shadow-lg" />
         </div>
 
         <section>
-          <h2 className="text-2xl font-semibold mb-4">Featured Properties</h2>
+          <h2 className="text-2xl font-semibold mb-4">Featured Residential Properties</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="border rounded-lg p-4 shadow hover:shadow-xl transition">
               <img src="/property1.jpg" alt="Property 1" className="rounded-md mb-4"/>
@@ -44,6 +44,27 @@ export default function Home() {
               <img src="/property3.jpg" alt="Property 3" className="rounded-md mb-4"/>
               <h3 className="text-xl font-bold">Waterfront Miami Estate</h3>
               <p>$6,900,000 · 6 Beds · 7 Baths</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold mb-4">Featured Business Properties</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="border rounded-lg p-4 shadow hover:shadow-xl transition">
+              <img src="/property1.jpg" alt="Business 1" className="rounded-md mb-4"/>
+              <h3 className="text-xl font-bold">Retail Complex in Los Angeles</h3>
+              <p>$12,000,000 · 10 Units · High Foot Traffic</p>
+            </div>
+            <div className="border rounded-lg p-4 shadow hover:shadow-xl transition">
+              <img src="/property2.jpg" alt="Business 2" className="rounded-md mb-4"/>
+              <h3 className="text-xl font-bold">Tech Office Space in San Francisco</h3>
+              <p>$18,500,000 · 50,000 sqft · Downtown Core</p>
+            </div>
+            <div className="border rounded-lg p-4 shadow hover:shadow-xl transition">
+              <img src="/property3.jpg" alt="Business 3" className="rounded-md mb-4"/>
+              <h3 className="text-xl font-bold">Warehouse & Distribution Hub</h3>
+              <p>$9,200,000 · 100,000 sqft · Near Port Access</p>
             </div>
           </div>
         </section>
