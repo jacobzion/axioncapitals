@@ -6,8 +6,8 @@ export default function Home() {
         <h1 className="text-3xl font-bold">Axion Capitals</h1>
         <p className="text-sm">Invest in Premium Real Estate with Confidence</p>
       </header>
-      <main className="p-8">
-        <section className="mb-12">
+      <main className="p-8 space-y-12">
+        <section>
           <h2 className="text-2xl font-semibold mb-4">Featured Properties</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="border rounded-lg p-4 shadow hover:shadow-xl transition">
@@ -26,6 +26,17 @@ export default function Home() {
               <p>$6,900,000 · 6 Beds · 7 Baths</p>
             </div>
           </div>
+        </section>
+
+        <section className="bg-blue-50 p-6 rounded-lg shadow">
+          <h2 className="text-2xl font-semibold mb-3 text-blue-900">E-2 Visa Investment Opportunities</h2>
+          <p className="mb-4">Are you an international investor seeking to establish residency in the United States? Axion Capitals offers tailored real estate and business investment opportunities specifically for E-2 Visa applicants.</p>
+          <ul className="list-disc list-inside space-y-2">
+            <li>✅ Purchase income-generating residential and commercial properties</li>
+            <li>✅ Invest in qualified U.S. businesses to meet E-2 Visa requirements</li>
+            <li>✅ Expert legal and immigration consultation available</li>
+          </ul>
+          <p className="mt-4 font-medium text-blue-700">Let us help you turn your investment into a pathway to residency.</p>
         </section>
       </main>
       <footer className="bg-gray-100 text-center p-4 text-sm text-gray-600">
