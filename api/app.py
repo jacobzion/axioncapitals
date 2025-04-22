@@ -1,9 +1,7 @@
-
 from flask import Flask, jsonify, request
 
 app = Flask(__name__)
 
-# Mock data
 properties = [
     {"id": 1, "name": "Sunset Villas", "location": "California", "rent": 2500, "tenant": "Alice"},
     {"id": 2, "name": "Greenwood Apartments", "location": "Texas", "rent": 1800, "tenant": "Bob"}

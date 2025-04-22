@@ -1,18 +1,20 @@
 
 import { useState, useEffect } from 'react';
 
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
+
 export default function PropertyAdmin() {
   const [properties, setProperties] = useState([]);
   const [form, setForm] = useState({ name: '', location: '', rent: '', tenant: '' });
 
   const fetchProperties = async () => {
-    const res = await fetch('/api/properties');
+    const res = await fetch(`${API_BASE}/api/properties`);
     const data = await res.json();
     setProperties(data);
   };
 
   const addProperty = async () => {
-    await fetch('/api/properties', {
+    await fetch(`${API_BASE}/api/properties`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ ...form, rent: parseInt(form.rent) }),
@@ -22,7 +24,7 @@ export default function PropertyAdmin() {
   };
 
   const deleteProperty = async (id) => {
-    await fetch(`/api/properties/${id}`, { method: 'DELETE' });
+    await fetch(`${API_BASE}/api/properties/${id}`, { method: 'DELETE' });
     fetchProperties();
   };
 
