@@ -24,7 +24,7 @@ export default function Home() {
 
       <main className="p-8 space-y-12">
         <div className="w-full flex justify-center">
-          <img src="/property1.jpg" alt="Center Showcase" className="rounded-xl w-full max-w-5xl shadow-lg" />
+          <img src="/hero-banner.png" alt="Hero Banner" className="rounded-xl w-full max-w-5xl shadow-lg" />
         </div>
 
         <section>
