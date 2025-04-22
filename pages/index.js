@@ -19,7 +19,6 @@ export default function Home() {
           <Link href="/find-home">Find Home</Link>
           <Link href="/buy-biz">Buy Biz</Link>
           <Link href="/contact">Contact</Link>
-          <a href="/index-ko" className="text-sm text-white underline hover:text-blue-300">한국어</a>
         </nav>
       </header>
 
@@ -54,5 +53,5 @@ export default function Home() {
         © 2025 Axion Capitals. All rights reserved.
       </footer>
     </div>
-  )
+  );
 }
