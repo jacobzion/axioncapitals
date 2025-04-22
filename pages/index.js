@@ -2,9 +2,12 @@
 export default function Home() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
-      <header className="bg-gradient-to-r from-blue-900 to-indigo-700 text-white p-6 shadow-md">
-        <h1 className="text-3xl font-bold">Axion Capitals</h1>
-        <p className="text-sm">Invest in Premium Real Estate with Confidence</p>
+      <header className="bg-gradient-to-r from-blue-900 to-indigo-700 text-white p-6 shadow-md flex items-center space-x-4">
+        <img src="/logo.png" alt="Axion Capitals Logo" className="h-12 w-auto"/>
+        <div>
+          <h1 className="text-3xl font-bold">Axion Capitals</h1>
+          <p className="text-sm">Invest in Premium Real Estate with Confidence</p>
+        </div>
       </header>
       <main className="p-8 space-y-12">
         <section>
@@ -29,14 +32,14 @@ export default function Home() {
         </section>
 
         <section className="bg-blue-50 p-6 rounded-lg shadow">
-          <h2 className="text-2xl font-semibold mb-3 text-blue-900">E-2 Visa Investment Opportunities</h2>
-          <p className="mb-4">Are you an international investor seeking to establish residency in the United States? Axion Capitals offers tailored real estate and business investment opportunities specifically for E-2 Visa applicants.</p>
+          <h2 className="text-2xl font-semibold mb-3 text-blue-900">Property Management Services</h2>
+          <p className="mb-4">Axion Capitals provides full-service property management for investors and homeowners. Whether you're managing residential rentals or commercial spaces, we've got you covered.</p>
           <ul className="list-disc list-inside space-y-2">
-            <li>✅ Purchase income-generating residential and commercial properties</li>
-            <li>✅ Invest in qualified U.S. businesses to meet E-2 Visa requirements</li>
-            <li>✅ Expert legal and immigration consultation available</li>
+            <li>✅ Tenant screening, leasing, and rent collection</li>
+            <li>✅ Maintenance and repair coordination</li>
+            <li>✅ Financial reporting and ROI analysis</li>
           </ul>
-          <p className="mt-4 font-medium text-blue-700">Let us help you turn your investment into a pathway to residency.</p>
+          <p className="mt-4 font-medium text-blue-700">Your investment, professionally managed.</p>
         </section>
       </main>
       <footer className="bg-gray-100 text-center p-4 text-sm text-gray-600">
