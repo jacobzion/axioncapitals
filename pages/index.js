@@ -20,7 +20,7 @@ export default function Home() {
             <Link href="/find-home">Find Home</Link>
             <Link href="/buy-biz">Buy Biz</Link>
             <Link href="/contact">Contact</Link>
-          </nav>
+          </nav><div className="mt-2 md:mt-0"><LanguageToggle /></div>
         </div>
       </header>
 

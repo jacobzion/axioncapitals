@@ -18,7 +18,7 @@ export default function Contact() {
             <a href="/find-home" className="hover:underline">Find Home</a>
             <a href="/buy-biz" className="hover:underline">Buy Biz</a>
             <a href="/contact" className="hover:underline">Contact</a>
-          </nav>
+          </nav><div className="mt-2 md:mt-0"><LanguageToggle /></div>
         </div>
       </header>
 

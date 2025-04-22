@@ -1,4 +1,7 @@
 
+
+import LanguageToggle from '../components/LanguageToggle';
+
 export default function Page() {
   return (
     <div className="min-h-screen bg-white text-gray-900 p-4 md:p-6">
@@ -18,7 +21,7 @@ export default function Page() {
             <a href="/find-home" className="hover:underline">Find Home</a>
             <a href="/buy-biz" className="hover:underline">Buy Biz</a>
             <a href="/contact" className="hover:underline">Contact</a>
-          </nav>
+          </nav><div className="mt-2 md:mt-0"><LanguageToggle /></div>
         </div>
       </header>
 
