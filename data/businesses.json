@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Downtown Dental Group",
+    "category": "Healthcare",
+    "location": "Los Angeles, CA",
+    "investmentType": "Franchise"
+  },
+  {
+    "id": 2,
+    "name": "GreenLeaf Grocery",
+    "category": "Retail",
+    "location": "Austin, TX",
+    "investmentType": "Partnership"
+  },
+  {
+    "id": 3,
+    "name": "SolarGen Energy",
+    "category": "Energy",
+    "location": "Phoenix, AZ",
+    "investmentType": "Equity"
+  },
+  {
+    "id": 4,
+    "name": "TechHaven Co-Working",
+    "category": "Commercial Real Estate",
+    "location": "San Francisco, CA",
+    "investmentType": "Lease"
+  }
+]
