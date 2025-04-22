@@ -1,4 +1,6 @@
 
+import Link from 'next/link';
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
@@ -12,12 +14,12 @@ export default function Home() {
             </div>
           </div>
           <nav className="flex flex-wrap justify-center md:justify-end gap-4 text-sm font-medium">
-            <a href="#" className="hover:underline">Home</a>
-            <a href="#" className="hover:underline">Invest</a>
-            <a href="#" className="hover:underline">Management</a>
-            <a href="#" className="hover:underline">Find Home</a>
-            <a href="#" className="hover:underline">Buy Biz</a>
-            <a href="#" className="hover:underline">Contact</a>
+            <Link href="/">Home</Link>
+            <Link href="/invest">Invest</Link>
+            <Link href="/management">Management</Link>
+            <Link href="/find-home">Find Home</Link>
+            <Link href="/buy-biz">Buy Biz</Link>
+            <Link href="/contact">Contact</Link>
           </nav>
         </div>
       </header>
