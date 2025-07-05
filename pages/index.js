@@ -16,43 +16,50 @@ export default function Home() {
         <meta name="description" content="AI Investment, Global Trading, Smart Contracts – Axion Capitals" />
       </Head>
 
-      <header className="flex items-center justify-between bg-yellow-100 px-6 py-4 shadow-md relative z-10">
-        <div className="flex items-center">
-          <Image src={logo} alt="Axion Logo" width={60} height={60} />
+      <header className="flex items-center justify-between bg-white/90 backdrop-blur-md px-8 py-4 shadow-md fixed w-full top-0 z-50">
+        <div className="flex items-center space-x-4">
+          <Image src={logo} alt="Axion Logo" width={50} height={50} />
+          <span className="text-xl font-semibold text-gray-800">Axion Capitals</span>
         </div>
 
         <button
-          className="md:hidden text-blue-800 text-xl focus:outline-none"
+          className="md:hidden text-gray-700 text-2xl focus:outline-none"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           ☰
         </button>
 
-        <nav className={`${
-          menuOpen ? 'block' : 'hidden'
-        } absolute top-full left-0 w-full bg-yellow-100 px-6 py-4 md:static md:flex md:items-center md:space-x-6 md:w-auto md:p-0`}>
-          <Link href="/about" className="block py-2 text-blue-800 hover:underline">About Us</Link>
-          <Link href="/global-trading" className="block py-2 text-blue-800 hover:underline">Global Trading</Link>
-          <Link href="/ai-analytics" className="block py-2 text-blue-800 hover:underline">AI & Analytics</Link>
-          <Link href="/smart-contracts" className="block py-2 text-blue-800 hover:underline">Smart Contracts</Link>
-          <Link href="/bridge-network" className="block py-2 text-blue-800 hover:underline">Bridge Network</Link>
-          <Link href="/resources" className="block py-2 text-blue-800 hover:underline">Resources</Link>
-          <Link href="/contact" className="block py-2 text-blue-800 hover:underline">Contact</Link>
+        <nav
+          className={`${
+            menuOpen ? 'block' : 'hidden'
+          } md:flex md:items-center md:space-x-8 absolute md:static top-full left-0 w-full md:w-auto bg-white md:bg-transparent px-6 py-4 md:p-0 shadow-md md:shadow-none`}
+        >
+          <Link href="/about" className="text-gray-700 hover:text-blue-700 transition font-medium">About</Link>
+          <Link href="/global-trading" className="text-gray-700 hover:text-blue-700 transition font-medium">Global Trading</Link>
+          <Link href="/ai-analytics" className="text-gray-700 hover:text-blue-700 transition font-medium">AI & Analytics</Link>
+          <Link href="/smart-contracts" className="text-gray-700 hover:text-blue-700 transition font-medium">Smart Contracts</Link>
+          <Link href="/bridge-network" className="text-gray-700 hover:text-blue-700 transition font-medium">Bridge Network</Link>
+          <Link href="/resources" className="text-gray-700 hover:text-blue-700 transition font-medium">Resources</Link>
+          <Link href="/contact" className="text-gray-700 hover:text-blue-700 transition font-medium">Contact</Link>
         </nav>
       </header>
 
-      <main className="min-h-screen bg-gradient-to-b from-yellow-100 to-yellow-300 text-gray-800 p-8">
-        <div className="flex flex-col items-center mb-10">
-          <h1 className="text-4xl font-bold mt-4 text-center">Welcome to Axion Capitals</h1>
-          <p className="mt-4 text-lg text-center max-w-xl">
-            Bridging innovation and opportunity through AI, international trading, and smart contract solutions.
+      <main className="pt-28 min-h-screen bg-gradient-to-b from-white via-yellow-50 to-yellow-200 text-gray-800 px-8 pb-12">
+        <div className="flex flex-col items-center text-center mb-12">
+          <h1 className="text-5xl font-extrabold mb-4 text-gray-900">Welcome to Axion Capitals</h1>
+          <p className="text-lg max-w-2xl text-gray-700">
+            Empowering global commerce through artificial intelligence, international trade networks, and smart blockchain contracts.
           </p>
         </div>
 
         <div className="flex justify-center mb-10">
-          <Image src={heroBanner} alt="Axion Hero Banner" width={600} height={600} />
+          <Image src={heroBanner} alt="Axion Hero Banner" width={600} height={600} className="rounded-xl shadow-lg" />
         </div>
       </main>
+
+      <footer className="bg-white text-center text-gray-500 py-6 border-t">
+        © 2025 Axion Capitals, LLC
+      </footer>
     </>
   );
 }
