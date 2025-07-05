@@ -2,10 +2,13 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState } from 'react';
 import logo from '../public/axion-logo.png';
 import heroBanner from '../public/hero-banner.png';
 
 export default function Home() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <>
       <Head>
@@ -13,18 +16,28 @@ export default function Home() {
         <meta name="description" content="AI Investment, Global Trading, Smart Contracts – Axion Capitals" />
       </Head>
 
-      <header className="flex items-center justify-between bg-yellow-100 px-6 py-4 shadow-md">
+      <header className="flex items-center justify-between bg-yellow-100 px-6 py-4 shadow-md relative z-10">
         <div className="flex items-center">
           <Image src={logo} alt="Axion Logo" width={60} height={60} />
         </div>
-        <nav className="flex space-x-6">
-          <Link href="/about" className="text-blue-800 hover:underline">About Us</Link>
-          <Link href="/global-trading" className="text-blue-800 hover:underline">Global Trading</Link>
-          <Link href="/ai-analytics" className="text-blue-800 hover:underline">AI & Analytics</Link>
-          <Link href="/smart-contracts" className="text-blue-800 hover:underline">Smart Contracts</Link>
-          <Link href="/bridge-network" className="text-blue-800 hover:underline">Bridge Network</Link>
-          <Link href="/resources" className="text-blue-800 hover:underline">Resources</Link>
-          <Link href="/contact" className="text-blue-800 hover:underline">Contact</Link>
+
+        <button
+          className="md:hidden text-blue-800 text-xl focus:outline-none"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          ☰
+        </button>
+
+        <nav className={`${
+          menuOpen ? 'block' : 'hidden'
+        } absolute top-full left-0 w-full bg-yellow-100 px-6 py-4 md:static md:flex md:items-center md:space-x-6 md:w-auto md:p-0`}>
+          <Link href="/about" className="block py-2 text-blue-800 hover:underline">About Us</Link>
+          <Link href="/global-trading" className="block py-2 text-blue-800 hover:underline">Global Trading</Link>
+          <Link href="/ai-analytics" className="block py-2 text-blue-800 hover:underline">AI & Analytics</Link>
+          <Link href="/smart-contracts" className="block py-2 text-blue-800 hover:underline">Smart Contracts</Link>
+          <Link href="/bridge-network" className="block py-2 text-blue-800 hover:underline">Bridge Network</Link>
+          <Link href="/resources" className="block py-2 text-blue-800 hover:underline">Resources</Link>
+          <Link href="/contact" className="block py-2 text-blue-800 hover:underline">Contact</Link>
         </nav>
       </header>
 
