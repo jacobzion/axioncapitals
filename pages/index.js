@@ -8,8 +8,8 @@ export default function Home() {
         <div className="flex items-center space-x-4">
           <img src="/axion-logo.png" alt="Axion Capitals Logo" className="h-16 w-auto" />
           <div>
-            <h1 className="text-3xl font-extrabold text-blue-400">Axion Capitals</h1>
-            <p className="text-sm text-gray-400">AI-Powered Real Estate & Smart Investments</p>
+            <h1 className="text-3xl font-extrabold text-blue-400">Axion Capitals Global Bridge</h1>
+            <p className="text-sm text-gray-400">Your Gateway to Smarter International Commerce</p>
           </div>
         </div>
         <nav className="flex flex-wrap justify-center md:justify-end gap-4 text-sm font-medium text-blue-300 mt-4 md:mt-0">
