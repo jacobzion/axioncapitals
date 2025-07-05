@@ -1,11 +1,14 @@
-
+// tailwind.config.js
 module.exports = {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}"
-  ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        sapphire: '#0F172A',
+        royalgold: '#D4AF37',
+        skymist: '#E2E8F0',
+        slategray: '#334155',
+        azure: '#3B82F6',
+      },
+    },
   },
-  plugins: [],
-}
+};
