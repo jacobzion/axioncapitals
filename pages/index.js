@@ -21,7 +21,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           <div className="flex items-center space-x-3">
             <Image src={logo} alt="Axion Logo" width={40} height={40} />
-            <span className="text-xl font-light text-gray-800 tracking-tight">Axion Capitals</span>
+            <span className="text-xl font-light text-gray-800 tracking-tight">Axion Capitals Global Bridge</span>
           </div>
 
           {/* Hamburger Button */}
