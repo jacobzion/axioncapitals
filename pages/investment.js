@@ -11,60 +11,61 @@ export default function Investment() {
     <>
       <Head>
         <title>Investment | Axion Capitals</title>
-        <meta name="description" content="Discover investment opportunities at Axion Capitals." />
+        <meta name="description" content="Explore strategic investment opportunities with Axion Capitals." />
       </Head>
 
-      <header className="bg-white border-b border-gray-200 fixed top-0 w-full z-50">
+      <header className="bg-black border-b border-gray-800 fixed top-0 w-full z-50">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           <div className="flex items-center space-x-3">
             <Image src={logo} alt="Axion Logo" width={100} height={100} />
-            <span className="text-xl font-light text-gray-800 tracking-tight">Axion Capitals Global Bridge</span>
+            <span className="text-xl font-light text-white trackingtight">Axion Capitals</span>
           </div>
 
           <button
-            className="md:hidden text-gray-700 text-2xl focus:outline-none"
+            className="md:hidden text-white text-2xl focus:outline-none"
             onClick={() => setMenuOpen(!menuOpen)}
           >
             ☰
           </button>
 
           <nav className="hidden md:flex space-x-6">
-            <a href="/" className="text-gray-700 hover:text-blue-700 text-sm font-medium">Home</a>
-            <a href="/trading" className="text-gray-700 hover:text-blue-700 text-sm font-medium">Trading</a>
-            <a href="/investment" className="text-gray-700 hover:text-blue-700 text-sm font-medium">Investment</a>
-            <a href="/about" className="text-gray-700 hover:text-blue-700 text-sm font-medium">About</a>
-            <a href="/contact" className="text-gray-700 hover:text-blue-700 text-sm font-medium">Contact</a>
+            <a href="/" className="text-white hover:text-blue-400 text-sm font-medium">Home</a>
+            <a href="/trading" className="text-white hover:text-blue-400 text-sm font-medium">Trading</a>
+            <a href="/investment" className="text-white hover:text-blue-400 text-sm font-medium">Investment</a>
+            <a href="/about" className="text-white hover:text-blue-400 text-sm font-medium">About</a>
+            <a href="/contact" className="text-white hover:text-blue-400 text-sm font-medium">Contact</a>
           </nav>
         </div>
 
         {menuOpen && (
-          <div className="md:hidden bg-white border-t border-gray-200 px-6 py-4 space-y-2">
-            <a href="/" className="block text-gray-700 hover:text-blue-700 text-sm font-medium">Home</a>
-            <a href="/trading" className="block text-gray-700 hover:text-blue-700 text-sm font-medium">Trading</a>
-            <a href="/investment" className="block text-gray-700 hover:text-blue-700 text-sm font-medium">Investment</a>
-            <a href="/about" className="block text-gray-700 hover:text-blue-700 text-sm font-medium">About</a>
-            <a href="/contact" className="block text-gray-700 hover:text-blue-700 text-sm font-medium">Contact</a>
+          <div className="md:hidden bg-black border-t border-gray-800 px-6 py-4 space-y-2">
+            <a href="/" className="block text-white hover:text-blue-400 text-sm font-medium">Home</a>
+            <a href="/trading" className="block text-white hover:text-blue-400 text-sm font-medium">Trading</a>
+            <a href="/investment" className="block text-white hover:text-blue-400 text-sm font-medium">Investment</a>
+            <a href="/about" className="block text-white hover:text-blue-400 text-sm font-medium">About</a>
+            <a href="/contact" className="block text-white hover:text-blue-400 text-sm font-medium">Contact</a>
           </div>
         )}
       </header>
 
-      <main className="pt-28 bg-gradient-to-b from-white via-gray-50 to-blue-100 min-h-screen">
-        <section className="max-w-6xl mx-auto px-6 py-20 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Strategic Investment</h1>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
-            At Axion Capitals, we focus on cross-border investment strategies that prioritize confidentiality,
-            opportunity, and long-term growth.
+      <main className="pt-28 bg-black min-h-screen text-white">
+        <section className="max-w-4xl mx-auto px-6 py-20 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold text-blue-400 mb-6">Global Investment Strategy</h1>
+          <p className="text-lg text-gray-300 mb-6">
+            Axion Capitals identifies and secures high-yield opportunities across international markets.
           </p>
-          <p className="text-gray-700 max-w-3xl mx-auto">
-            Our portfolios include private equity ventures, infrastructure initiatives, and technology
-            partnerships across East Asian countries, South America, and European nations. We serve
-            institutional and qualified investors with tailored capital allocations.
+          <p className="text-gray-400 max-w-2xl mx-auto">
+            We specialize in discreet partnerships, infrastructure ventures, and commodity-linked investments
+            across East Asia, South America, and European regions. Our team leverages strategic insight,
+            risk mitigation, and global networks to ensure competitive returns.
           </p>
         </section>
       </main>
 
-      <footer className="bg-white border-t border-gray-200 text-center text-gray-500 text-sm py-6">
-        © 2025 Axion Capitals, LLC
+      <footer className="bg-black border-t border-gray-800 text-center text-gray-500 text-sm py-6">
+        <div>
+          © 2025 Axion Capitals, LLC<br />
+        </div>
       </footer>
     </>
   );
