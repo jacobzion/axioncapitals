@@ -62,9 +62,6 @@ export default function Contact() {
               8 The Green STE B<br />
               Dover, DE 19901<br />
               United States<br />
-              <br />
-              <span className="text-sm text-gray-500">Email: gloriel.group@gmail.com</span><br />
-              <span className="text-sm text-gray-500">Phone: +1 (778) 402-3327</span>
             </p>
           </div>
         </section>
@@ -73,7 +70,6 @@ export default function Contact() {
       <footer className="bg-white border-t border-gray-200 text-center text-gray-500 text-sm py-6">
         <div>
           © 2025 Axion Capitals, LLC<br />
-          1234 Global Trade Blvd, Suite 501, Wilmington, DE 19801, USA
         </div>
       </footer>
     </>
