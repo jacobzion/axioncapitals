@@ -1,4 +1,3 @@
-// pages/index.tsx
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -9,33 +8,75 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Axion Capitals - Global Innovation & Trade</title>
-        <meta name="description" content="AI Investment, Global Trading, Smart Contracts – Axion Capitals" />
+        <title>Axion Capitals</title>
+        <meta name="description" content="Strategic Global Trade and Investment Solutions by Axion Capitals" />
       </Head>
 
-      <main className="min-h-screen bg-gradient-to-b from-yellow-100 to-yellow-300 text-gray-800 p-8">
-        <div className="flex flex-col items-center mb-10">
-          <Image src={logo} alt="Axion Capitals Global Bridge Logo" width={180} height={180} />
-          <h1 className="text-4xl font-bold mt-4 text-center">Welcome to Axion Capitals</h1>
-          <p className="mt-4 text-lg text-center max-w-xl">
-            Bridging innovation and opportunity through AI, international trading, and smart contract solutions.
+      {/* Header */}
+      <header className="bg-white border-b border-gray-200 fixed top-0 w-full z-50">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+          <div className="flex items-center space-x-3">
+            <Image src={logo} alt="Axion Logo" width={40} height={40} />
+            <span className="text-xl font-light text-gray-800 tracking-tight">Axion Capitals</span>
+          </div>
+          <nav className="hidden md:flex space-x-6">
+            <Link href="/" className="text-gray-700 hover:text-blue-700 text-sm font-medium">Home</Link>
+            <Link href="/trading" className="text-gray-700 hover:text-blue-700 text-sm font-medium">Trading</Link>
+            <Link href="/investment" className="text-gray-700 hover:text-blue-700 text-sm font-medium">Investment</Link>
+            <Link href="/about" className="text-gray-700 hover:text-blue-700 text-sm font-medium">About</Link>
+            <Link href="/contact" className="text-gray-700 hover:text-blue-700 text-sm font-medium">Contact</Link>
+          </nav>
+        </div>
+      </header>
+
+      {/* Hero Section */}
+      <main className="pt-28 bg-gradient-to-b from-white via-gray-50 to-blue-100 min-h-screen">
+        <section className="max-w-6xl mx-auto px-6 py-20 flex flex-col items-center text-center">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+            Bridging Trade. Building Trust.
+          </h1>
+          <p className="text-lg text-gray-600 max-w-2xl mb-10">
+            Empowering strategic trade between global markets through integrity, intelligence, and innovation.
           </p>
-        </div>
+          <div className="w-full max-w-4xl">
+            <Image
+              src={heroBanner}
+              alt="Global Business Hero"
+              className="rounded-xl shadow-lg"
+              priority
+            />
+          </div>
+        </section>
 
-        <div className="flex justify-center mb-10">
-          <Image src={heroBanner} alt="Axion Hero Banner" width={600} height={600} />
-        </div>
-
-        <nav className="space-y-4 text-center">
-          <Link href="/about" className="block text-blue-800 underline">About Us</Link>
-          <Link href="/global-trading" className="block text-blue-800 underline">Global Trading</Link>
-          <Link href="/ai-analytics" className="block text-blue-800 underline">AI & Analytics</Link>
-          <Link href="/smart-contracts" className="block text-blue-800 underline">Smart Contracts</Link>
-          <Link href="/bridge-network" className="block text-blue-800 underline">Bridge Network</Link>
-          <Link href="/resources" className="block text-blue-800 underline">Resources</Link>
-          <Link href="/contact" className="block text-blue-800 underline">Contact</Link>
-        </nav>
+        {/* Highlights Section */}
+        <section className="bg-white py-16 px-6">
+          <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-8 text-center">
+            <div>
+              <h3 className="text-xl font-semibold text-blue-700 mb-2">Cross-Border Trading</h3>
+              <p className="text-gray-600 text-sm">
+                We connect trusted suppliers and buyers across continents through discreet and efficient trade practices.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-blue-700 mb-2">Confidential Investment</h3>
+              <p className="text-gray-600 text-sm">
+                We align strategic capital with emerging markets using insight-driven risk evaluation.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-blue-700 mb-2">AI-Enabled Insights</h3>
+              <p className="text-gray-600 text-sm">
+                We leverage intelligent analytics to empower every decision across the supply and investment chain.
+              </p>
+            </div>
+          </div>
+        </section>
       </main>
+
+      {/* Footer */}
+      <footer className="bg-white border-t border-gray-200 text-center text-gray-500 text-sm py-6">
+        © 2025 Axion Capitals, LLC
+      </footer>
     </>
   );
 }
