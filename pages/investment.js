@@ -57,7 +57,7 @@ export default function Investment() {
           </p>
           <p className="text-gray-700 max-w-3xl mx-auto">
             Our portfolios include private equity ventures, infrastructure initiatives, and technology
-            partnerships across Brazil, China, Canada, South Korea, Japan, and Europe. We serve
+            partnerships across East Asian countries, South America, and European nations. We serve
             institutional and qualified investors with tailored capital allocations.
           </p>
         </section>
