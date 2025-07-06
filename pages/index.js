@@ -9,54 +9,47 @@ export default function Home() {
     <>
       <Head>
         <title>Axion Capitals</title>
-        <meta name="description" content="Axion Capitals – Global Trade and Investment" />
+        <meta name="description" content="Strategic Global Trade and Investment Advisory" />
       </Head>
 
-      {/* Header with right-aligned menu */}
-      <header className="bg-white shadow-md fixed top-0 w-full z-50">
+      {/* Header */}
+      <header className="bg-white border-b border-gray-200 fixed top-0 w-full z-50">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <Image src={logo} alt="Axion Logo" width={40} height={40} />
-            <span className="text-lg font-semibold text-gray-800">Axion Capitals</span>
+            <span className="text-xl font-light text-gray-800 tracking-tight">Axion Capitals</span>
           </div>
 
-          {/* Right-aligned Menu */}
-          <nav className="flex space-x-4">
-            {navLinks.map((item, index) => (
-              <Link
-                key={index}
-                href={item.href}
-                className="text-gray-700 hover:text-white hover:bg-blue-600 px-4 py-2 rounded-full transition duration-300 text-sm font-medium"
-              >
-                {item.label}
-              </Link>
-            ))}
+          {/* Top Menu */}
+          <nav className="flex space-x-6">
+            <Link href="/" className="text-gray-700 hover:text-blue-700 text-sm font-medium">Home</Link>
+            <Link href="/trading" className="text-gray-700 hover:text-blue-700 text-sm font-medium">Trading</Link>
+            <Link href="/investment" className="text-gray-700 hover:text-blue-700 text-sm font-medium">Investment</Link>
+            <Link href="/about" className="text-gray-700 hover:text-blue-700 text-sm font-medium">About</Link>
+            <Link href="/contact" className="text-gray-700 hover:text-blue-700 text-sm font-medium">Contact</Link>
           </nav>
         </div>
       </header>
 
-      {/* Main Content */}
-      <main className="pt-28 flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-white via-blue-50 to-blue-100 px-4">
-        {/* Hero Image */}
-        <div className="w-full max-w-3xl">
-          <Image
-            src={heroBanner}
-            alt="Hero Banner"
-            className="rounded-xl shadow-lg"
-            priority
-          />
+      {/* Hero Section */}
+      <main className="pt-28 bg-white min-h-screen">
+        <div className="max-w-6xl mx-auto px-6 py-16">
+          <div className="w-full max-w-4xl mx-auto">
+            <Image
+              src={heroBanner}
+              alt="Global Strategy Hero"
+              className="rounded-lg shadow-md"
+              priority
+            />
+          </div>
         </div>
       </main>
+
+      {/* Footer */}
+      <footer className="bg-white border-t border-gray-200 text-center text-gray-400 text-sm py-6">
+        © 2025 Axion Capitals, LLC
+      </footer>
     </>
   );
 }
-
-// Navigation Links
-const navLinks = [
-  { label: 'Home', href: '/' },
-  { label: 'Trading', href: '/trading' },
-  { label: 'Investment', href: '/investment' },
-  { label: 'About', href: '/about' },
-  { label: 'Contact', href: '/contact' }
-];
