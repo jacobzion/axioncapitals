@@ -1,10 +1,14 @@
+// pages/index.tsx
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState } from 'react';
 import logo from '../public/axion-logo.png';
 import heroBanner from '../public/hero-banner.png';
 
 export default function Home() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <>
       <Head>
@@ -19,6 +23,16 @@ export default function Home() {
             <Image src={logo} alt="Axion Logo" width={40} height={40} />
             <span className="text-xl font-light text-gray-800 tracking-tight">Axion Capitals</span>
           </div>
+
+          {/* Hamburger Button */}
+          <button
+            className="md:hidden text-gray-700 text-2xl focus:outline-none"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            ☰
+          </button>
+
+          {/* Desktop Menu */}
           <nav className="hidden md:flex space-x-6">
             <Link href="/" className="text-gray-700 hover:text-blue-700 text-sm font-medium">Home</Link>
             <Link href="/trading" className="text-gray-700 hover:text-blue-700 text-sm font-medium">Trading</Link>
@@ -27,6 +41,17 @@ export default function Home() {
             <Link href="/contact" className="text-gray-700 hover:text-blue-700 text-sm font-medium">Contact</Link>
           </nav>
         </div>
+
+        {/* Mobile Dropdown */}
+        {menuOpen && (
+          <div className="md:hidden bg-white border-t border-gray-200 px-6 py-4 space-y-2">
+            <Link href="/" className="block text-gray-700 hover:text-blue-700 text-sm font-medium">Home</Link>
+            <Link href="/trading" className="block text-gray-700 hover:text-blue-700 text-sm font-medium">Trading</Link>
+            <Link href="/investment" className="block text-gray-700 hover:text-blue-700 text-sm font-medium">Investment</Link>
+            <Link href="/about" className="block text-gray-700 hover:text-blue-700 text-sm font-medium">About</Link>
+            <Link href="/contact" className="block text-gray-700 hover:text-blue-700 text-sm font-medium">Contact</Link>
+          </div>
+        )}
       </header>
 
       {/* Hero Section */}
