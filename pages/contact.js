@@ -17,7 +17,7 @@ export default function Contact() {
       <header className="bg-black border-b border-gray-800 fixed top-0 w-full z-50">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           <div className="flex items-center space-x-3">
-            <Image src={logo} alt="Axion Logo" width={40} height={40} />
+            <Image src={logo} alt="Axion Logo" width={100} height={100} />
             <span className="text-xl font-light text-white tracking-tight">Axion Capitals</span>
           </div>
 
