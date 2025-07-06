@@ -64,24 +64,6 @@ export default function Trading() {
           </p>
         </section>
 
-        {/* Region Icons Section */}
-        <section className="bg-white py-12 px-6">
-          <h2 className="text-2xl font-semibold text-center text-gray-800 mb-6">Strategic Trade Regions</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto text-center">
-            {[
-              { name: 'East Asia', icon: '/flags/korea.png' },
-              { name: 'South America', icon: '/flags/brazil.png' },
-              { name: 'Europe', icon: '/flags/eu.png' },
-              { name: 'Global', icon: '/flags/global.png' },
-            ].map((region, index) => (
-              <div key={index}>
-                <Image src={region.icon} alt={region.name} width={60} height={60} className="mx-auto mb-2" />
-                <p className="text-gray-700 text-sm">{region.name}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
         {/* Security Section */}
         <section className="bg-blue-50 py-16 px-6 mt-16">
           <div className="max-w-4xl mx-auto text-center">
