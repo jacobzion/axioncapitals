@@ -49,56 +49,31 @@ export default function Contact() {
       </header>
 
       <main className="pt-28 bg-gradient-to-b from-white via-gray-50 to-blue-100 min-h-screen">
-        <section className="max-w-4xl mx-auto px-6 py-20">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-8 text-center">Contact Us</h1>
-          <p className="text-center text-gray-600 mb-12">
-            Reach out to our team for business inquiries, strategic partnerships, or general questions.
+        <section className="max-w-4xl mx-auto px-6 py-20 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Get in Touch</h1>
+          <p className="text-lg text-gray-600 mb-8">
+            We welcome inquiries, partnerships, and international collaborations.
           </p>
 
-          <form className="bg-white rounded-lg shadow-md p-8 space-y-6">
-            <div>
-              <label className="block text-sm font-medium text-gray-700">Name</label>
-              <input
-                type="text"
-                className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-blue-500 focus:border-blue-500"
-                placeholder="Your Name"
-              />
-            </div>
-
-            <div>
-              <label className="block text-sm font-medium text-gray-700">Email</label>
-              <input
-                type="email"
-                className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-blue-500 focus:border-blue-500"
-                placeholder="you@example.com"
-              />
-            </div>
-
-            <div>
-              <label className="block text-sm font-medium text-gray-700">Message</label>
-              <textarea
-                rows={5}
-                className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-blue-500 focus:border-blue-500"
-                placeholder="How can we help you?"
-              ></textarea>
-            </div>
-
-            <div className="text-right">
-              <button
-                type="submit"
-                className="inline-block bg-blue-600 text-white text-sm font-medium px-6 py-2 rounded-md hover:bg-blue-700"
-              >
-                Send Message
-              </button>
-            </div>
-          </form>
+          <div className="bg-white shadow-lg rounded-lg p-8 mx-auto max-w-md">
+            <h2 className="text-xl font-semibold text-gray-800 mb-4">Head Office</h2>
+            <p className="text-gray-700">
+              Axion Capitals Global Bridge, LLC<br />
+              8 The Green STE B<br />
+              Dover, DE 19901<br />
+              United States<br />
+              <br />
+              <span className="text-sm text-gray-500">Email: gloriel.group@gmail.com</span><br />
+              <span className="text-sm text-gray-500">Phone: +1 (778) 402-3327</span>
+            </p>
+          </div>
         </section>
       </main>
 
       <footer className="bg-white border-t border-gray-200 text-center text-gray-500 text-sm py-6">
         <div>
-          © 2025 Axion Capitals Global Bridge, LLC<br />
-          8 The Green STE B, Dover, DE 19901, USA
+          © 2025 Axion Capitals, LLC<br />
+          1234 Global Trade Blvd, Suite 501, Wilmington, DE 19801, USA
         </div>
       </footer>
     </>
