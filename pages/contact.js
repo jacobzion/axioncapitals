@@ -58,13 +58,11 @@ export default function Contact() {
           <div className="bg-gray-900 shadow-lg rounded-lg p-8 mx-auto max-w-md">
             <h2 className="text-xl font-semibold text-white mb-4">Head Office</h2>
             <p className="text-gray-300">
-              Axion Capitals, LLC<br />
-              1234 Global Trade Blvd, Suite 501<br />
-              Wilmington, DE 19801<br />
+              Axion Capitals Global Bridge, LLC<br />
+              8 The Green STE B<br />
+              Dover, DE 19901<br />
               United States<br />
               <br />
-              <span className="text-sm text-blue-400">Email: gloriel.group@gmail.com</span><br />
-              <span className="text-sm text-blue-400">Phone: +1 (778) 402-3327</span>
             </p>
           </div>
         </section>
@@ -73,7 +71,6 @@ export default function Contact() {
       <footer className="bg-black border-t border-gray-800 text-center text-gray-500 text-sm py-6">
         <div>
           © 2025 Axion Capitals, LLC<br />
-          1234 Global Trade Blvd, Suite 501, Wilmington, DE 19801, USA
         </div>
       </footer>
     </>
