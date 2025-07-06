@@ -96,7 +96,10 @@ export default function Contact() {
       </main>
 
       <footer className="bg-white border-t border-gray-200 text-center text-gray-500 text-sm py-6">
-        © 2025 Axion Capitals, LLC
+        <div>
+          © 2025 Axion Capitals Global Bridge, LLC<br />
+          8 The Green STE B, Dover, DE 19901, USA
+        </div>
       </footer>
     </>
   );
