@@ -1,50 +1,103 @@
+// pages/contact.tsx
+import Head from 'next/head';
+import Image from 'next/image';
+import logo from '../public/axion-logo.png';
+import { useState } from 'react';
 
 export default function Contact() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <div className="min-h-screen bg-white text-gray-900 p-4 md:p-6">
-      <header className="bg-gradient-to-r from-blue-900 to-indigo-700 text-white px-4 py-4 shadow-md mb-6">
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between space-y-2 md:space-y-0">
-          <div className="flex items-center space-x-4">
-            <img src="/axion-logo.png" alt="Axion Capitals Logo" className="h-16 w-auto" />
-            <div>
-              <h1 className="text-xl font-bold md:text-2xl">Axion Capitals</h1>
-              <p className="text-xs">Real Estate · AI Investment · Smart Contracts</p>
-            </div>
+    <>
+      <Head>
+        <title>Contact | Axion Capitals</title>
+        <meta name="description" content="Contact Axion Capitals for inquiries and partnerships." />
+      </Head>
+
+      <header className="bg-white border-b border-gray-200 fixed top-0 w-full z-50">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+          <div className="flex items-center space-x-3">
+            <Image src={logo} alt="Axion Logo" width={40} height={40} />
+            <span className="text-xl font-light text-gray-800 tracking-tight">Axion Capitals</span>
           </div>
-          <nav className="flex flex-wrap justify-center md:justify-end gap-4 text-sm font-medium">
-            <a href="/" className="hover:underline">Home</a>
-            <a href="/invest" className="hover:underline">Invest</a>
-            <a href="/management" className="hover:underline">Management</a>
-            <a href="/find-home" className="hover:underline">Find Home</a>
-            <a href="/buy-biz" className="hover:underline">Buy Biz</a>
-            <a href="/contact" className="hover:underline">Contact</a>
+
+          <button
+            className="md:hidden text-gray-700 text-2xl focus:outline-none"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            ☰
+          </button>
+
+          <nav className="hidden md:flex space-x-6">
+            <a href="/" className="text-gray-700 hover:text-blue-700 text-sm font-medium">Home</a>
+            <a href="/trading" className="text-gray-700 hover:text-blue-700 text-sm font-medium">Trading</a>
+            <a href="/investment" className="text-gray-700 hover:text-blue-700 text-sm font-medium">Investment</a>
+            <a href="/about" className="text-gray-700 hover:text-blue-700 text-sm font-medium">About</a>
+            <a href="/contact" className="text-gray-700 hover:text-blue-700 text-sm font-medium">Contact</a>
           </nav>
         </div>
+
+        {menuOpen && (
+          <div className="md:hidden bg-white border-t border-gray-200 px-6 py-4 space-y-2">
+            <a href="/" className="block text-gray-700 hover:text-blue-700 text-sm font-medium">Home</a>
+            <a href="/trading" className="block text-gray-700 hover:text-blue-700 text-sm font-medium">Trading</a>
+            <a href="/investment" className="block text-gray-700 hover:text-blue-700 text-sm font-medium">Investment</a>
+            <a href="/about" className="block text-gray-700 hover:text-blue-700 text-sm font-medium">About</a>
+            <a href="/contact" className="block text-gray-700 hover:text-blue-700 text-sm font-medium">Contact</a>
+          </div>
+        )}
       </header>
 
-      <main className="max-w-2xl mx-auto space-y-6">
-        <h2 className="text-2xl font-semibold text-gray-800">Get in Touch</h2>
-        <p>We’d love to hear from you. Whether you’re interested in investing, managing properties, or exploring smart contract solutions — drop us a message!</p>
-        <form className="space-y-4">
-          <div>
-            <label className="block text-sm font-medium text-gray-700">Name</label>
-            <input type="text" className="w-full border border-gray-300 p-2 rounded" required />
-          </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700">Email</label>
-            <input type="email" className="w-full border border-gray-300 p-2 rounded" required />
-          </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700">Message</label>
-            <textarea rows="4" className="w-full border border-gray-300 p-2 rounded" required></textarea>
-          </div>
-          <button type="submit" className="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800 transition">Send Message</button>
-        </form>
+      <main className="pt-28 bg-gradient-to-b from-white via-gray-50 to-blue-100 min-h-screen">
+        <section className="max-w-4xl mx-auto px-6 py-20">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-8 text-center">Contact Us</h1>
+          <p className="text-center text-gray-600 mb-12">
+            Reach out to our team for business inquiries, strategic partnerships, or general questions.
+          </p>
+
+          <form className="bg-white rounded-lg shadow-md p-8 space-y-6">
+            <div>
+              <label className="block text-sm font-medium text-gray-700">Name</label>
+              <input
+                type="text"
+                className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-blue-500 focus:border-blue-500"
+                placeholder="Your Name"
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-gray-700">Email</label>
+              <input
+                type="email"
+                className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-blue-500 focus:border-blue-500"
+                placeholder="you@example.com"
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-gray-700">Message</label>
+              <textarea
+                rows={5}
+                className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-blue-500 focus:border-blue-500"
+                placeholder="How can we help you?"
+              ></textarea>
+            </div>
+
+            <div className="text-right">
+              <button
+                type="submit"
+                className="inline-block bg-blue-600 text-white text-sm font-medium px-6 py-2 rounded-md hover:bg-blue-700"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+        </section>
       </main>
 
-      <footer className="bg-gray-100 text-center p-4 text-sm text-gray-600 mt-12">
-        © 2025 Axion Capitals. All rights reserved.
+      <footer className="bg-white border-t border-gray-200 text-center text-gray-500 text-sm py-6">
+        © 2025 Axion Capitals, LLC
       </footer>
-    </div>
+    </>
   );
 }
