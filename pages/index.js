@@ -57,6 +57,19 @@ export default function Home() {
             Empowering strategic global trade and investments across East Asia, South America, and Europe.
           </p>
         </section>
+
+        {/* Business Description Section */}
+        <section className="bg-gray-900 py-16 px-6">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-semibold text-blue-400 mb-6">Our Business</h2>
+            <p className="text-gray-300 text-lg mb-4">
+              Axion Capitals serves as a confidential and strategic bridge between international suppliers, buyers, and investors.
+            </p>
+            <p className="text-gray-400">
+              We focus on high-demand global commodities and discreet investment channels, offering a reliable gateway between East Asian countries, South America, and European nations. Our operations prioritize security, speed, and insight—empowering clients to trade and grow in a volatile global market.
+            </p>
+          </div>
+        </section>
       </main>
 
       <footer className="bg-black border-t border-gray-800 text-center text-gray-500 text-sm py-6">
