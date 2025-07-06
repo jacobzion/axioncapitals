@@ -18,8 +18,8 @@ export default function Trading() {
       <header className="bg-white border-b border-gray-200 fixed top-0 w-full z-50">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           <div className="flex items-center space-x-3">
-            <Image src={logo} alt="Axion Logo" width={40} height={40} />
-            <span className="text-xl font-light text-gray-800 tracking-tight">Axion Capitals</span>
+            <Image src={logo} alt="Axion Logo" width={100} height={100} />
+            <span className="text-xl font-light text-gray-800 tracking-tight">Axion Capitals Global Bridge</span>
           </div>
 
           <button
