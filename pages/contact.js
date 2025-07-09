@@ -58,11 +58,12 @@ export default function Contact() {
           <div className="bg-gray-900 shadow-lg rounded-lg p-8 mx-auto max-w-md">
             <h2 className="text-xl font-semibold text-white mb-4">Head Office</h2>
             <p className="text-gray-300">
-              Axion Capitals Global Bridge, LLC<br />
+              Axion Capitals Global Bridge LLC<br />
               8 The Green STE B<br />
               Dover, DE 19901<br />
-              United States<br />
-              <br />
+              United States<br /><br />
+              📧 info@axioncapitals.com<br />
+              📞 +1 778-402-3327
             </p>
           </div>
         </section>
