@@ -33,8 +33,8 @@ export default function Home() {
             <a href="/" className="text-white hover:text-blue-400 text-sm font-medium">Home</a>
             <a href="/trading" className="text-white hover:text-blue-400 text-sm font-medium">Trading</a>
             <a href="/investment" className="text-white hover:text-blue-400 text-sm font-medium">Investment</a>
-            <a href="/real-estate">Real Estate</a>
-            <a href="/it-solutions">IT Solutions</a> 
+            <a href="/real-estate" className="text-white hover:text-blue-400 text-sm font-medium">Real Estate</a>
+            <a href="/it-solutions" className="text-white hover:text-blue-400 text-sm font-medium">IT Solutions</a> 
             <a href="/about" className="text-white hover:text-blue-400 text-sm font-medium">About</a>
             <a href="/contact" className="text-white hover:text-blue-400 text-sm font-medium">Contact</a>
           </nav>
@@ -45,8 +45,8 @@ export default function Home() {
             <a href="/" className="block text-white hover:text-blue-400 text-sm font-medium">Home</a>
             <a href="/trading" className="block text-white hover:text-blue-400 text-sm font-medium">Trading</a>
             <a href="/investment" className="block text-white hover:text-blue-400 text-sm font-medium">Investment</a>
-            <a href="/real-estate">Real Estate</a>
-            <a href="/it-solutions">IT Solutions</a>
+            <a href="/real-estate" className="text-white hover:text-blue-400 text-sm font-medium">Real Estate</a>
+            <a href="/it-solutions" className="text-white hover:text-blue-400 text-sm font-medium">IT Solutions</a>
             <a href="/about" className="block text-white hover:text-blue-400 text-sm font-medium">About</a>
             <a href="/contact" className="block text-white hover:text-blue-400 text-sm font-medium">Contact</a>
           </div>
