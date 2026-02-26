@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --bg: #0b1220;
+  --panel: #0f1b2e;
+  --muted: #9fb0c7;
+  --text: #e8eef7;
+  --line: rgba(231,238,247,0.12);
+  --accent: #2f6cff;
+  --accent2: #6aa8ff;
+}
+
+body{
+  background: var(--bg);
+  color: var(--text);
+}
+
+.ac-card{
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 2rem;
+  background: rgba(255,255,255,0.02);
+}
+
+.ac-button{
+  padding: 0.75rem 1.5rem;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  color: white;
+}
