@@ -5,7 +5,8 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Axion Capitals Global Bridge",
-  description: "Enterprise-grade global bridging for trade, investment, real estate, and technology execution.",
+  description:
+    "Enterprise-grade global bridging for trade, investment, real estate, and technology execution.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

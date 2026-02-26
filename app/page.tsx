@@ -26,6 +26,7 @@ const cards = [
 export default function HomePage() {
   return (
     <div className="space-y-12">
+      {/* HERO */}
       <section
         className="rounded-2xl border p-8 md:p-12"
         style={{
@@ -56,7 +57,8 @@ export default function HomePage() {
             href="/contact"
             className="inline-flex items-center justify-center rounded-2xl px-5 py-3 text-sm font-medium text-white"
             style={{
-              background: "linear-gradient(135deg, var(--accent), var(--accent2))",
+              background:
+                "linear-gradient(135deg, var(--accent), var(--accent2))",
             }}
           >
             Request an Introduction
@@ -84,7 +86,10 @@ export default function HomePage() {
             <div
               key={t}
               className="rounded-2xl border p-5"
-              style={{ borderColor: "var(--line)", background: "rgba(255,255,255,0.02)" }}
+              style={{
+                borderColor: "var(--line)",
+                background: "rgba(255,255,255,0.02)",
+              }}
             >
               <div className="text-sm font-semibold">{t}</div>
               <div className="mt-2 text-sm" style={{ color: "var(--muted)" }}>
@@ -95,6 +100,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* SERVICES */}
       <section>
         <div
           className="text-xs font-semibold uppercase tracking-widest"
@@ -112,13 +118,19 @@ export default function HomePage() {
               key={c.href}
               href={c.href}
               className="rounded-2xl border p-6 transition hover:translate-y-[-1px]"
-              style={{ borderColor: "var(--line)", background: "rgba(255,255,255,0.02)" }}
+              style={{
+                borderColor: "var(--line)",
+                background: "rgba(255,255,255,0.02)",
+              }}
             >
               <div className="text-lg font-semibold">{c.title}</div>
               <div className="mt-2 text-sm" style={{ color: "var(--muted)" }}>
                 {c.desc}
               </div>
-              <div className="mt-4 text-sm font-medium" style={{ color: "var(--accent2)" }}>
+              <div
+                className="mt-4 text-sm font-medium"
+                style={{ color: "var(--accent2)" }}
+              >
                 Explore →
               </div>
             </Link>
@@ -126,38 +138,13 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section>
-        <div
-          className="text-xs font-semibold uppercase tracking-widest"
-          style={{ color: "var(--muted)" }}
-        >
-          Process
-        </div>
-        <h2 className="mt-2 text-2xl font-semibold tracking-tight">How it works</h2>
-
-        <ol className="mt-6 grid gap-4 md:grid-cols-3">
-          {[
-            ["1) Intake", "Capture objective, scope, constraints, timeline, and stakeholders."],
-            ["2) Structure", "Define operating model, data requirements, and milestones."],
-            ["3) Execute", "Coordinate deliverables, track progress, and communicate updates."],
-          ].map(([t, d]) => (
-            <li
-              key={t}
-              className="rounded-2xl border p-6"
-              style={{ borderColor: "var(--line)", background: "rgba(255,255,255,0.02)" }}
-            >
-              <div className="text-sm font-semibold">{t}</div>
-              <div className="mt-2 text-sm" style={{ color: "var(--muted)" }}>
-                {d}
-              </div>
-            </li>
-          ))}
-        </ol>
-      </section>
-
+      {/* CTA */}
       <section
         className="rounded-2xl border p-6 md:p-8"
-        style={{ borderColor: "var(--line)", background: "rgba(255,255,255,0.02)" }}
+        style={{
+          borderColor: "var(--line)",
+          background: "rgba(255,255,255,0.02)",
+        }}
       >
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
@@ -173,7 +160,8 @@ export default function HomePage() {
             href="/contact"
             className="inline-flex items-center justify-center rounded-2xl px-5 py-3 text-sm font-medium text-white"
             style={{
-              background: "linear-gradient(135deg, var(--accent), var(--accent2))",
+              background:
+                "linear-gradient(135deg, var(--accent), var(--accent2))",
             }}
           >
             Contact Axion

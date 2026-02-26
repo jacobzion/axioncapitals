@@ -19,7 +19,10 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-3">
           <span
             className="inline-flex h-9 w-9 items-center justify-center rounded-xl border"
-            style={{ borderColor: "var(--line)", background: "rgba(255,255,255,0.04)" }}
+            style={{
+              borderColor: "var(--line)",
+              background: "rgba(255,255,255,0.04)",
+            }}
             aria-label="Axion Capitals Global Bridge"
           >
             <span className="text-sm font-semibold" style={{ color: "var(--accent2)" }}>
@@ -31,7 +34,10 @@ export default function Navbar() {
             <div className="font-semibold tracking-tight">
               Axion <span style={{ color: "var(--muted)" }}>Capitals</span>
             </div>
-            <div className="text-xs font-semibold uppercase tracking-widest" style={{ color: "var(--muted)" }}>
+            <div
+              className="text-xs font-semibold uppercase tracking-widest"
+              style={{ color: "var(--muted)" }}
+            >
               Global Bridge
             </div>
           </div>
@@ -39,7 +45,12 @@ export default function Navbar() {
 
         <nav className="hidden gap-5 md:flex">
           {links.map((l) => (
-            <Link key={l.href} href={l.href} className="text-sm transition hover:text-white" style={{ color: "var(--muted)" }}>
+            <Link
+              key={l.href}
+              href={l.href}
+              className="text-sm transition hover:text-white"
+              style={{ color: "var(--muted)" }}
+            >
               {l.label}
             </Link>
           ))}
@@ -48,7 +59,9 @@ export default function Navbar() {
         <Link
           href="/contact"
           className="inline-flex items-center justify-center rounded-2xl px-4 py-2 text-sm font-medium text-white"
-          style={{ background: "linear-gradient(135deg, var(--accent), var(--accent2))" }}
+          style={{
+            background: "linear-gradient(135deg, var(--accent), var(--accent2))",
+          }}
         >
           Request Intro
         </Link>
